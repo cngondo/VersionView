@@ -3,6 +3,7 @@ package design.example.ngondo.versionview;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
@@ -25,8 +26,8 @@ public class VersionView extends TextView {
         super(context, attrs, defStyleAttr);
         setVersion();
     }
-
     private void setVersion(){
+        //get the package name of the app
         try {
             PackageInfo packageInfo = getContext().getPackageManager().getPackageInfo(
                     getContext().getPackageName(), 0
@@ -34,6 +35,7 @@ public class VersionView extends TextView {
             setText(packageInfo.versionName);
         } catch (PackageManager.NameNotFoundException e) {
         }
-
+        //Confirm functionality by changing bg
+//        setBackgroundColor(Color.RED);
     }
 }

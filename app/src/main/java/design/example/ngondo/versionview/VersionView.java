@@ -6,10 +6,11 @@ import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.util.AttributeSet;
 import android.widget.TextView;
-
-/**
- * Created by ngondo on 4/7/16.
- */
+/*
+* Class that extends textview and customizes it.
+* Used mainly to modularize your code if you find yourself repeating the same
+* code in textViews multiple times
+* */
 public class VersionView extends TextView {
     //Can create it in Java
     public VersionView(Context context) {

@@ -9,6 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="design.example.ngondo.versionview.MainActivity">
 
+    <!-- CUSTOM TV FROM THE VersionView Class-->
     <design.example.ngondo.versionview.VersionView
         android:id="@+id/text"
         android:layout_width="wrap_content"
